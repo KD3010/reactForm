@@ -1,0 +1,49 @@
+.form-container {
+  background-color: white;
+  width: 350px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  transition: all 0.5s;
+  transform: translateY(5rem);
+
+  & h1 {
+    text-align: center;
+  }
+
+  .btn {
+    cursor: pointer;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: rgb(8, 223, 8);
+    color: white;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s;
+
+    &:hover {
+      box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
+      transform: scale(1.02) translateY(-2px);
+    }
+
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .form-container {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .form-container {
+    width: 200px;
+  }
+}

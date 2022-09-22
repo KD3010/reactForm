@@ -1,0 +1,21 @@
+.input-container {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  input {
+    border: 2px solid gray;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .warning {
+    color: red;
+    display: none;
+  }
+
+  input:invalid[focused='true'] ~ .warning {
+    display: block;
+  }
+}
